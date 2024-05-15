@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'django_portfolio.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Feel free to alter this value to suit your needs.
-        default=os.environ.get('DATABASE_URL_EXTERNAL'),
+        default=os.environ.get('postgres://dj_portfolio_zwg6_user:MysRgbb14itAMaaVNDAQekspEKOal3TQ@dpg-cp23gpen7f5s73fa99cg-a.oregon-postgres.render.com/dj_portfolio_zwg6'),
         conn_max_age=600
     )
 }
@@ -164,7 +164,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 cloudinary.config(
-      cloud_name = os.environ.get('CLOUDINARY_CLOUD_NAME'),
-      api_key = os.environ.get('CLOUDINARY_API_KEY'),
-      api_secret = os.environ.get('CLOUDINARY_API_SECRET'),
+      cloud_name = os.environ.get('dxntwt7ju'),
+      api_key = os.environ.get('837729285243682'),
+      api_secret = os.environ.get('6D6BFOxrdwCNtVZNB54mcVr94SE'),
 )
